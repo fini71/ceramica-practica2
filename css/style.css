@@ -1,0 +1,100 @@
+/* IMPORTAR GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* CABECERA Y NAV */
+body {
+    color: #000000;
+    background-image: url('img/home-hero.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.overlay {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: -1;
+}
+
+/* MAIN */
+main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h1, main h2 {
+    color:#FFFFFF;
+}
+main h1 {
+    font-size: 60px;
+    letter-spacing: -3px;
+}
+main h2 {
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+.isologo {
+    width: 35px;
+    margin-bottom: 2px;
+}
+/* ENLACES DEL MENU DE NAV Y PIE LEGAL */
+header nav {
+    text-align: center;
+}
+.menu-principal {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    font-size: 13px;
+}
+.menu-principal a, .menu-legal a, .creditos p a {
+    color:#FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.menu-principal a:hover, .menu-legal a:hover, .creditos p a:hover {
+    color: #6BDEC8;
+}
+.creditos p a:hover {
+    color: white;
+}
+/* FOOTER */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 12px;
+    gap: 5px;
+}
+footer p, .creditos p {
+    color:#FFFFFF;
+    padding-bottom: 8px;
+}
+.menu-legal {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 12px;
+}
+footer p, .creditos p, .menu-legal a, .creditos p a {
+    font-size: 10px; 
+}
